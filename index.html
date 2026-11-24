@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code2B — Software sob medida para o seu negócio</title>
+<meta name="description" content="Code2B: desenvolvimento de software, sistemas web e automação para empresas.">
+<link rel="canonical" href="https://code2b.com.br/">
+<meta property="og:title" content="Code2B">
+<meta property="og:description" content="Do código ao negócio: software sob medida para empresas.">
+<meta property="og:url" content="https://code2b.com.br/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0f14'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%2347e5a5' text-anchor='middle'>2B</text></svg>">
+<style>
+  :root {
+    --bg: #0b0f14; --surface: #121821; --line: #1f2a37;
+    --text: #e6edf3; --muted: #8b98a8; --accent: #47e5a5;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font: 17px/1.6 var(--sans); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  .logo { font: 700 20px var(--mono); color: var(--text); }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--muted); margin-left: 24px; font-size: 15px; }
+  nav a:hover { color: var(--text); text-decoration: none; }
+
+  .hero { padding: 112px 0 96px; }
+  .prompt { font: 14px var(--mono); color: var(--accent); margin-bottom: 20px; }
+  .prompt::after { content: "▍"; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.08; letter-spacing: -0.02em; max-width: 14ch; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .lead { color: var(--muted); font-size: 19px; max-width: 56ch; margin: 24px 0 36px; }
+  .btn { display: inline-block; background: var(--accent); color: #04140d; font-weight: 600;
+         padding: 14px 26px; border-radius: 8px; }
+  .btn:hover { text-decoration: none; filter: brightness(1.1); }
+
+  section { padding: 80px 0; border-top: 1px solid var(--line); }
+  h2 { font: 600 13px var(--mono); text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; }
+  .card h3 { font-size: 19px; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 15px; }
+  .card .n { font: 13px var(--mono); color: var(--accent); display: block; margin-bottom: 16px; }
+
+  .contact { text-align: center; }
+  .contact p { color: var(--muted); margin: -12px auto 32px; max-width: 48ch; }
+
+  footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    nav { display: none; }
+    .hero { padding: 72px 0 64px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .prompt::after { animation: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">code<span>2</span>b</a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como">Como trabalhamos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <p class="prompt">$ code --to business</p>
+    <h1>Do código ao <em>negócio</em>.</h1>
+    <p class="lead">Desenvolvemos software sob medida, sistemas web e automações que resolvem problemas reais da sua empresa, do primeiro rascunho até a produção.</p>
+    <a class="btn" href="#contato">Fale com a gente</a>
+  </div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <div class="grid">
+        <div class="card"><span class="n">01</span><h3>Sistemas web</h3><p>Aplicações e painéis administrativos rápidos, seguros e fáceis de manter.</p></div>
+        <div class="card"><span class="n">02</span><h3>Integrações e APIs</h3><p>Conectamos seus sistemas, ERPs, e-commerce e meios de pagamento.</p></div>
+        <div class="card"><span class="n">03</span><h3>Automação</h3><p>Eliminamos tarefas manuais repetitivas com scripts, bots e fluxos inteligentes.</p></div>
+        <div class="card"><span class="n">04</span><h3>Consultoria</h3><p>Arquitetura, revisão de código e apoio técnico para o seu time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="wrap">
+      <h2>Como trabalhamos</h2>
+      <div class="grid">
+        <div class="card"><span class="n">→ entender</span><h3>Diagnóstico</h3><p>Conversamos sobre o problema antes de falar em tecnologia.</p></div>
+        <div class="card"><span class="n">→ construir</span><h3>Entregas curtas</h3><p>Versões funcionais a cada ciclo, com você acompanhando de perto.</p></div>
+        <div class="card"><span class="n">→ evoluir</span><h3>Suporte contínuo</h3><p>Monitoramento, melhorias e manutenção depois do lançamento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="wrap">
+      <h2>Contato</h2>
+      <p>Tem um projeto em mente? Conte pra gente e respondemos em até 1 dia útil.</p>
+      <!-- TODO: trocar pelo e-mail real -->
+      <a class="btn" href="mailto:contato@code2b.com.br">contato@code2b.com.br</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Code2B · code2b.com.br · <span style="opacity:.7">CNPJ 24.282.995/0001-99</span></div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
